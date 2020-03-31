@@ -599,10 +599,10 @@ namespace Katalog.CS
         public void Kasacja()
         {
             Console.Clear();
-            Console.Write("Oto lista modeli. Wybierz element, ktory chcesz usunac: ");
+            Console.WriteLine("Oto lista modeli. Wybierz element, ktory chcesz usunac: ");
             for(int i=0;i<mobil.Count;i++)
             {
-                Console.WriteLine(i+1+". "+mobil[i].model+Environment.NewLine);
+                Console.WriteLine(i + 1 + ". " + mobil[i].model + Environment.NewLine);
             }
             Console.Write("Wybierz podajac nazwe: ");
             string dekl = Console.ReadLine();
@@ -709,6 +709,7 @@ namespace Katalog.CS
                         break;
                     }
                 }
+                Console.ReadKey();
             }
         }
     }
